@@ -1,4 +1,4 @@
-.login p, .register p {
+.login p {
 	float: left;
 }
 
@@ -8,4 +8,8 @@ label {
 
 .party{
 	display: inline;
+}
+
+.openRegisterModal {
+    float: right;
 }
