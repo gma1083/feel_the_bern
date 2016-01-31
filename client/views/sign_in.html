@@ -21,9 +21,11 @@
 
 <template name="login">
     <form class="login">
-        <p>Email: <input type="email" name="loginEmail"></p>
-        <p>Password: <input type="password" name="loginPassword"></p>
-        <p><input type="submit" value="Login"></p>
+        <div class="loginFields">
+            <p>Email: <input type="email" name="loginEmail"></p>
+            <p>Password: <input type="password" name="loginPassword"></p>
+        </div>
+        <p class="loginButton"><input class="btn btn-success" type="submit" value="Login"></p>
     </form>
 </template>
 
