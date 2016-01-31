@@ -5,14 +5,19 @@ body {
 .jumbotron {
 	background-color: #E03F32;
 	background: "images/banner.jpg";
+	padding: 0;
 }
 
 .banner {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 230px;
 }
 
-.login p, .register p {
+.login p{
+	float: right;
+}
+
+.register p{
 	float: left;
 }
 
@@ -34,6 +39,10 @@ label {
 	margin-right: 8px;
 }
 
+.registerButtons{
+	float: right;
+}
+
 .loginButton{
 	margin-top: -5px;
 }
@@ -41,4 +50,26 @@ label {
 .navbar-brand{
 	margin-top: 15px;
 }
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.loginEmail{
+	padding-right: 8px;
+}
+
+.loginPassword{
+	padding-right: 8px;
+}
+
+.form-control{
+	width: 150px;
+	display: inline;
+}
+
+.logo{
+	height: 250%;
+}
+
 
