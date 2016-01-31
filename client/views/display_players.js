@@ -6,8 +6,7 @@ if (Meteor.isClient){
 		var currUser = Meteor.user();
 		var currTeam = teams.findOne({owner: currUser.emails[0].address});
 		var currPlayers = currTeam.my_team;
-		//I hate life
-		//this is where we need some fancy conditional to tell us if something is on my god damn team.
+		//Condition, PLayer on Team?
 		currPlayers = currPlayers.push(this._id);
 		teams.update(this._id, {
 			$set : {my_team : currPlayers}
@@ -21,7 +20,7 @@ if (Meteor.isClient){
 		settings: function () {
 			return {
 				collection: players,
-				class: "table table-bordered table-hover",
+				class: "table table-hover table-striped",
 				rowsPerPage: 20,
 				showFilter: false,
 				showNavigation: true,
@@ -30,7 +29,13 @@ if (Meteor.isClient){
 					{ key: 'polls', label: 'Polls' },
 					{ key: 'funding', label: 'Funding' },
 					{ key: 'bonus', label: 'Bonus' },
-					{ key: 'cost', label: 'Cost' }
+					{ key: 'cost', label: 'Cost' },
+					{ key: 'party', label: 'Party', hidden: true,
+						cellClass: function () {
+							var css = 'test';
+							return css;
+						}
+     				}
 				]
 			};
 		}
