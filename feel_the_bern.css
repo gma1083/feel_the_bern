@@ -1,3 +1,17 @@
+body {
+	background-color: #295C92;
+}
+
+.jumbotron {
+	background-color: #E03F32;
+	background: "images/banner.jpg";
+}
+
+.banner {
+	width: 100%;
+	height: auto;
+}
+
 .login p, .register p {
 	float: left;
 }
@@ -9,3 +23,4 @@ label {
 .party{
 	display: inline;
 }
+
