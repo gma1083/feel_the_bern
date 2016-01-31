@@ -1,5 +1,6 @@
 //define collections
 players = new Mongo.Collection("players");
+teams = new Mongo.Collection("teams");
 
 if (Meteor.isClient) {
   Accounts.ui.config({

@@ -8,6 +8,7 @@ if (Meteor.isClient){
               email: email,
               password: password
           });
+          createTeam(email);
       }
   });
 
@@ -25,5 +26,17 @@ if (Meteor.isClient){
       event.preventDefault();
       Meteor.logout();
     }
+  });
+}
+
+function createTeam(email) {
+  var owner = email;
+  var money = 100;
+  var my_team = [];
+
+  teams.insert({
+    owner: owner,
+    money: money,
+    my_team: my_team
   });
 }
