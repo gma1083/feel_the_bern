@@ -1,12 +1,25 @@
 <template name="add_player">
     <form class="add_player">
-    	<p>Player: <input name="player"></p>
-        <p>Party: <input name="party"></p>
+    	<p>Player: <input name="playerName"></p>
+        <p class="party">Party:</p>
+            <select name="party">
+              <option >Democrat</option>
+              <option >Republican</option>
+              <option >Independent</option>
+            </select>
+        <p>Position: </p>
+            <form class="position">
+                <label><input type="checkbox" name="presCandidate">Presidential Candidate</label>
+                <label><input type="checkbox" name="senator">Senator</label>
+                <label><input type="checkbox" name="representative"> Representative</label>
+                <label><input type="checkbox" name="governor"> Governor</label>
+                <label><input type="checkbox" name="congressperson"> Congressperson</label>
+            </form>
         <p>State: <input name="state"></p>
         <p>Bonus: <input name="bonus"></p>
         <p>Cost: <input name="cost"></p>
         <p>Polls: <input name="polls"></p>
         <p>Funding: <input name="funding"></p>
-        <p><input type="submit" value="Register"></p>
+        <p><input type="submit" value="Add Player"></p>
     </form>
 </template>

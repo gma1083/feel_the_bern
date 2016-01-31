@@ -1,3 +1,11 @@
 .login p, .register p {
 	float: left;
 }
+
+label {
+	display: block;
+}
+
+.party{
+	display: inline;
+}
