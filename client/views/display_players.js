@@ -20,7 +20,7 @@ if (Meteor.isClient){
 		settings: function () {
 			return {
 				collection: players,
-				class: "table table-hover table-striped",
+				class: "table",
 				rowsPerPage: 20,
 				showFilter: false,
 				showNavigation: true,
@@ -35,7 +35,7 @@ if (Meteor.isClient){
 							var css = 'test';
 							return css;
 						}
-     				}
+					}
 				]
 			};
 		}

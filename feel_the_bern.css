@@ -1,5 +1,9 @@
 body {
-	background-color: #295C92;
+	background-color: #28435E;
+}
+
+.navbar {
+	background-color: #C7CDD3;
 }
 
 .jumbotron {
@@ -42,8 +46,8 @@ label {
 }
 
 .table {
-   border-radius: 15px;
-   background-color: #4CAF50;
+   border-radius: 5px;
+   background-color: #A7B4C1;
 }
 
 th, td {
@@ -51,7 +55,7 @@ th, td {
 	text-align: center;
 }
  	
-.table-striped>tbody>tr:nth-child(odd)>td, 
+/*.table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: #F5695E;
  }
@@ -59,4 +63,4 @@ th, td {
  .table-striped>tbody>tr:nth-child(even)>td, 
 .table-striped>tbody>tr:nth-child(even)>th {
    background-color: #4570A0;
- }
+ }*/
