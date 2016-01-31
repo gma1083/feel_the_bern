@@ -1,7 +1,5 @@
 <head>
-
   <title>feel_the_bern</title>
-  <link type="text/css" rel="stylesheet" href="bootsrap.min.css" />
   <link type="text/css" rel="stylesheet" href="./clients/views/display_players.css" />
 </head>
 
@@ -17,7 +15,8 @@
 	    		{{> dashboard}}
 	    	{{else}}
 		    	{{> register}}<br>
-		    	{{> login}}
+		    	{{> login}}<br>
+		    	<a class="openRegisterModal" data-toggle="modal" data-target="#myModal">Register</a>
 	    	{{/if}}
 	    </div>
   	</div>

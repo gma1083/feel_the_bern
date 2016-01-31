@@ -24,3 +24,21 @@ label {
 	display: inline;
 }
 
+.openRegisterModal {
+    float: right;
+}
+
+.loginFields{
+	display: inline;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.loginButton{
+	margin-top: -5px;
+}
+
+.navbar-brand{
+	margin-top: 15px;
+}
+
