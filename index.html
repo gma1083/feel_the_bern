@@ -2,6 +2,7 @@
 
   <title>feel_the_bern</title>
   <link type="text/css" rel="stylesheet" href="bootsrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="./clients/views/display_players.css" />
 </head>
 
 <body>
@@ -21,7 +22,15 @@
 	    </div>
   	</div>
   </div>
-  {{> add_player}}
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-lg-6 col-lg-offset-3">
+  			{{> display_players}}
+		</div>
+  	</div>
+  </div>
+
 </body>
 
 

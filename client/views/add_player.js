@@ -6,19 +6,19 @@ if (Meteor.isClient) {
       var party = event.target.party.value;
       var state = event.target.state.value;
       var positions = getPositions();
-      var bonus = event.target.bonus.value;
-      var cost = event.target.cost.value;
       var polls = event.target.polls.value;
       var funding = event.target.funding.value;
+      var bonus = event.target.bonus.value;
+      var cost = event.target.cost.value;
       players.insert({
         playerName: name,
         party: party,
         state: state,
         positions: positions,
-        bonus: bonus,
-        cost: cost,
         polls: polls,
-        funding: funding
+        funding: funding,
+        bonus: bonus,
+        cost: cost
       });
     }
   });
