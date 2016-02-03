@@ -4,10 +4,12 @@ if (Meteor.isClient){
           event.preventDefault();
           var email = event.target.registerEmail.value;
           var password = event.target.registerPassword.value;
+          console.log("z");
           Accounts.createUser({
               email: email,
               password: password
           });
+          console.log("a");
           createTeam(email);
       }
   });
@@ -30,6 +32,7 @@ if (Meteor.isClient){
 }
 
 function createTeam(email) {
+  console.log("b");
   var owner = email;
   var money = 100;
   var my_team = [];

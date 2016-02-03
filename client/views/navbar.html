@@ -1,0 +1,19 @@
+<template name="navbar">
+  <div class="navbar navbar-default">
+  	<div class="container-fluid">
+	    <div class="navbar-header">
+	    	<a class="navbar-brand"><img class="logo" src="/logo.png"></a>
+	    </div>
+	    <div class="collapse navbar-collapse navbar-right">
+	    	{{#if currentUser}}
+	    		<p class="loggedIn">You are logged in</p>
+	    		{{> dashboard}}
+	    	{{else}}
+		    	{{> register}}<br>
+		    	{{> login}}<br>
+		    	<a class="openRegisterModal" data-toggle="modal" data-target="#myModal">Register</a>
+	    	{{/if}}
+	    </div>
+  	</div>
+  </div>
+</template>

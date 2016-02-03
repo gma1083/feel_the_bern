@@ -1,0 +1,26 @@
+<head>
+  <title>feel_the_bern</title>
+  <link type="text/css" rel="stylesheet" href="./clients/views/display_players.css" />
+  <link href="http://america.aljazeera.com/content/ajam/articles.rss" rel="alternate" type="application/rss+xml" title="TESTING" />
+</head>
+
+<template name="home">
+  {{>navbar}}
+  <div class="jumbotron container-fluid">
+  	<img src="/banner1.png" class="banner">
+  </div>
+
+  <div class="container-fluid">
+  	<div class="row">
+      <div class="col-lg-2 col-lg-offset-1 addPlayer"> 
+        {{> addPlayer}}
+      </div>
+  		<div class="col-lg-6">
+  			{{> displayPlayers}}
+      </div>
+      <div class="col-lg-2">
+        {{>newsfeed}}
+      </div>
+  	</div>
+  </div>
+</template>
