@@ -1,5 +1,4 @@
 if (Meteor.isClient){
-
 	Template.displayPlayers.events({
 	// 	'click .reactive-table tbody tr': function (event) {
 	// //	console.log(this._id);
@@ -14,7 +13,6 @@ if (Meteor.isClient){
 	// 	console.log(currPlayers);
 
 	// 	},
-
 		'click .reactive-table tbody tr': function(event){
 			if (event.target.className == 'delete') {
 				console.log(this);
