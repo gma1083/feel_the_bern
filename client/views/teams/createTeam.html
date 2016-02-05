@@ -3,14 +3,12 @@
 	<div class="container-fluid">
   	<div class="row">
       <div class="col-lg-2 col-lg-offset-1"> 
-        {{#if currentUser}}
   	    <div class="well">
   	      <form class="createTeam">
   	    	  <p>Team Name<input name="teamName"></p>
   	        <p><input type="submit" value="Create Team"></p>
   	      </form>
   	    </div>
-        {{/if}}
       </div>
   	  <div class="col-lg-6">
     		{{> displayTeam}}

@@ -2,7 +2,9 @@ Template.displayTeam.events({
 	'click .reactive-table tbody tr': function(event){
 		if (event.target.className == 'delete') {
 			console.log(this);
-			teams.remove(this._id);
+			Meteor.call('deleteTeam', this._id, function(error){
+				if(error) return alert(error.reason);
+			});
 		}
 		
 	}

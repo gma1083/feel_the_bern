@@ -1,17 +1,11 @@
 // Creates a team
 Template.createTeam.events({
-'submit form' : function (event){
-  event.preventDefault(); // we decide the rules
-  Team.createTeam();
-}
+	'submit form .createTeam' : function (event, template){
+  		event.preventDefault(); // we decide the rules
+  		var name = event.target.teamName.value;
+		Meteor.call('createTeam', name, function(error){
+			if(error) return alert(error.reason);
+		});
+  		template.find("form").reset();
+	}
 });
-
-Team = { 
-  createTeam: function() {
-    var name = event.target.teamName.value;
-    teams.insert({
-      teamName: name,
-      teamManager: Meteor.userId(),
-    });
-  }
-}
